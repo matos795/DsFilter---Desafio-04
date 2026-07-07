@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --color-light-gray: #E8E8E8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+}
+
+a, a:hover {
+    color: unset;
+    text-decoration: none;
+}
+
+html, body {
+    background-color: var(--color-light-gray);
+}
+
+main {
+    padding: 0 20px;
+}
