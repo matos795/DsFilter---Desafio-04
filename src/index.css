@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 :root {
-    --color-light-gray: #E8E8E8;
+    --color-bg-body: #C2C2C2;
+    --color-bg-header: #55BC04;
+
+    --color-font-header: #FFFFFF;
 }
 
 * {
@@ -17,9 +20,19 @@ a, a:hover {
 }
 
 html, body {
-    background-color: var(--color-light-gray);
+    background-color: var(--color-bg-body);
 }
 
 main {
     padding: 0 20px;
+}
+
+.dsf-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.dsf-mb20 {
+  margin-bottom: 20px;
 }
