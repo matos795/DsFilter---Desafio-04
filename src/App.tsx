@@ -1,5 +1,5 @@
-import Filter from "./components/Filter"
 import Header from "./components/Header"
+import ListingBody from "./components/ListingBody"
 
 function App() {
 
@@ -7,9 +7,7 @@ function App() {
     <>
       <Header />
 
-      <main className="dsf-container">
-        <Filter />
-      </main>
+      <ListingBody />
     </>
   )
 }
