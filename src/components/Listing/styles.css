@@ -1,0 +1,10 @@
+.dsf-listing {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--color-bg-listing);
+    padding: 20px;
+}

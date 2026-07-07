@@ -5,10 +5,15 @@
     --color-bg-header: #55BC04;
     --color-bg-button-filter: #55BC04;
     --color-bg-filter: #FFFFFF;
+    --color-bg-listing: #FFFFFF;
 
     --color-font-header: #FFFFFF;
     --color-font-button-filter: #FFFFFF;
     --color-font-input-filter: #C2C2C2;
+    --color-font-card-p: #6F6F6F;
+    --color-font-card-h2: #55BC04;
+
+    --color-border-card: #55BC04;
 }
 
 * {
@@ -25,10 +30,6 @@ a, a:hover {
 
 html, body {
     background-color: var(--color-bg-body);
-}
-
-main {
-    padding: 0 20px;
 }
 
 .dsf-container {
