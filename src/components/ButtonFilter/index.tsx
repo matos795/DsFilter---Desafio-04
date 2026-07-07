@@ -2,12 +2,13 @@ import "./styles.css"
 
 type Props = {
     text: string
+    type: "submit" | "reset"
 }
 
-export default function ButtonFilter({text}: Props) {
+export default function ButtonFilter({text, type}: Props) {
     return(
-        <div className="dsf-btn-filter dsf-btn">
+        <button type={type} className="dsf-btn-filter dsf-btn">
             {text}
-        </div>
+        </button>
     )
 }

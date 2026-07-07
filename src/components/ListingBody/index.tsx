@@ -32,11 +32,15 @@ export default function ListingBody() {
         setContextProductsCount(filteredProducts.length);
     }, [queryParams, setContextProductsCount]);
 
+    function handleFilter(min: number, max: number) {
+        setQueryParams({ min, max });
+    }
+
     return (
         <>
             <main className="dsf-container">
                 <div className="dsf-listing-body">
-                    <Filter />
+                    <Filter onFilter={handleFilter} />
                     <Listing products={products} />
                 </div>
             </main>
