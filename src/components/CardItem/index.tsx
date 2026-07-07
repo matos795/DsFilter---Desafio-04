@@ -1,10 +1,15 @@
+import type { ProductDTO } from "../../models/product"
 import "./styles.css"
 
-export default function CardItem() {
+type Props = {
+    product: ProductDTO
+}
+
+export default function CardItem({product}: Props) {
     return(
         <div className="dsf-card-item">
-            <p>PC Gamer Pro</p>
-            <h2>R$ 1200,00</h2>
+            <p>{product.name}</p>
+            <h2>R$ {product.price.toFixed(2)}</h2>
         </div>
     )
 }
