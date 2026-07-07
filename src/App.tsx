@@ -1,13 +1,18 @@
+import { useState } from "react";
 import Header from "./components/Header"
 import ListingBody from "./components/ListingBody"
+import { ContextProductsCount } from "./utils/context-products";
 
 function App() {
 
+  const [contextProductsCount, setContextProductsCount] = useState<number>(0);
+
   return (
     <>
-      <Header />
-
-      <ListingBody />
+      <ContextProductsCount.Provider value={{ contextProductsCount, setContextProductsCount }}>
+        <Header />
+        <ListingBody />
+      </ContextProductsCount.Provider>
     </>
   )
 }

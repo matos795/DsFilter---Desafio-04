@@ -1,9 +1,10 @@
 import "./styles.css"
 import Filter from "../Filter";
 import Listing from "../Listing";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import type { ProductDTO } from "../../models/product";
 import * as productService from "../../services/product-service"
+import { ContextProductsCount } from "../../utils/context-products";
 
 type QueryParams = {
     min: number,
@@ -11,6 +12,8 @@ type QueryParams = {
 }
 
 export default function ListingBody() {
+
+    const { setContextProductsCount } = useContext(ContextProductsCount)
 
     const [products, setProducts] = useState<ProductDTO[]>([]);
 
@@ -20,8 +23,14 @@ export default function ListingBody() {
     })
 
     useEffect(() => {
-        setProducts(productService.findByPrice(queryParams.min, queryParams.max));
-    }, [queryParams])
+        const filteredProducts = productService.findByPrice(
+            queryParams.min,
+            queryParams.max
+        );
+
+        setProducts(filteredProducts);
+        setContextProductsCount(filteredProducts.length);
+    }, [queryParams, setContextProductsCount]);
 
     return (
         <>
