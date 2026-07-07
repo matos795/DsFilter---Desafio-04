@@ -3,8 +3,12 @@
 :root {
     --color-bg-body: #C2C2C2;
     --color-bg-header: #55BC04;
+    --color-bg-button-filter: #55BC04;
+    --color-bg-filter: #FFFFFF;
 
     --color-font-header: #FFFFFF;
+    --color-font-button-filter: #FFFFFF;
+    --color-font-input-filter: #C2C2C2;
 }
 
 * {

@@ -1,0 +1,20 @@
+.dsf-input {
+    display: flex;
+    color: var(--color-font-input-filter);
+}
+
+.dsf-input input:focus {
+    outline: none;
+}
+
+.dsf-input input::placeholder {
+    color: var(--color-font-input-filter);
+}
+
+.dsf-input input {
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid var(--color-font-input-filter);
+    border-radius: 5px;
+}

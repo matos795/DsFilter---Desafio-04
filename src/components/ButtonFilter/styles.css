@@ -1,0 +1,17 @@
+.dsf-btn-filter {
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+    
+    font-size: 16px;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    background-color: var(--color-bg-button-filter);
+    color: var(--color-font-button-filter);
+    border: none;
+}
